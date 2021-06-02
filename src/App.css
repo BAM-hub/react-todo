@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    display: flex;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 7vh;
+    background: rgb(90, 250, 210);
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn{
+    width: 15vw;
+    padding: .6rem 1rem;
+    border: none;
+    margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .2rem;
+    background: rgba(100, 255, 146, 0.836);
+    margin-top: .2rem;
+    border-bottom: .4rem solid rgb(90, 250, 210);
+}
+
+.text, .day{
+    width: 50vw;
+    padding: 0 .4rem;
+}
+
+.reminder{
+    border-left: 10px solid rgb(0, 0, 0);
+}
+
+.add-form{
+    width: 100%;
+}
+
+.form-control{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .3rem 2rem;
+}
+
+.add-form input[type="submit"]{
+    margin-left: 2rem;
+    border: none;
+    padding: .5rem;
 }

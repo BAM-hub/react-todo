@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "text": "commit this project",
+      "day": "now",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "next learn local storage",
+      "day": "whenever free",
+      "reminder": false,
+      "id": 2
+    }
+  ]
+}
